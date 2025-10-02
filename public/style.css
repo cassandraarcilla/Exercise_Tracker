@@ -1,0 +1,137 @@
+/* Universal box-sizing for consistent layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F8F8F8; /* Light neutral background */
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #111; /* Black for main heading */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #D4AF37; /* Elegant gold underline */
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+form {
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: #FAFAFA; /* Clean light form background */
+  border: 1px solid #E0E0E0; /* Subtle gray border */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+input[type="text"] {
+  display: block;
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  width: 100%;
+  border: 1px solid #CCC; /* Soft gray border */
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #D4AF37; /* Gold accent on focus */
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+input[type="submit"] {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 5px;
+  background-color: #111; /* Black button */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  display: block;
+  width: auto;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #D4AF37; /* Gold hover */
+  color: #111; /* Black text on gold */
+  transform: translateY(-1px);
+}
+
+input[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95em;
+  background-color: #F0F0F0; /* Neutral background for code */
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: #111; /* Black text for code */
+}
+
+/* Specific styling for instructions */
+.container > p {
+  background-color: #FAFAFA;
+  border: 1px solid #E0E0E0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 30px;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px auto;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+}
